@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{403B4CF6-5D7F-467B-9643-7925137549EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PharmacyManagement</RootNamespace>
+    <AssemblyName>PharmacyManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="User Control Forms\AdminSalesAndInventoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\AdminSalesAndInventoryUserControl.Designer.cs">
+      <DependentUpon>AdminSalesAndInventoryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\AdminIssueUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\AdminIssueUserControl.Designer.cs">
+      <DependentUpon>AdminIssueUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\AdminBillHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\AdminBillHistory.Designer.cs">
+      <DependentUpon>AdminBillHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\BillOperations.cs" />
+    <Compile Include="User Control Forms\BillHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\BillHistory.Designer.cs">
+      <DependentUpon>BillHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\BillDataAccess.cs" />
+    <Compile Include="Data Access\AdminDataAccess.cs" />
+    <Compile Include="User Control Forms\MyIssue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\MyIssue.Designer.cs">
+      <DependentUpon>MyIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\MedicineBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\MedicineBill.Designer.cs">
+      <DependentUpon>MedicineBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\AdminHomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\AdminHomeUserControl.Designer.cs">
+      <DependentUpon>AdminHomeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\AdminManageEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\AdminManageEmployees.Designer.cs">
+      <DependentUpon>AdminManageEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\DataAccess.cs" />
+    <Compile Include="Data Access\MedicineAccess.cs" />
+    <Compile Include="Forms\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Appointment.cs" />
+    <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Forms\Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Issues.cs" />
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Medicine.cs" />
+    <Compile Include="Operations\MedicineOperations.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Worker.cs" />
+    <Compile Include="Forms\WorkerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkerHome.Designer.cs">
+      <DependentUpon>WorkerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\WorkerDataAccess.cs" />
+    <Compile Include="Operations\WorkerOperations.cs" />
+    <Compile Include="User Control Forms\WorkerInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerInventory.Designer.cs">
+      <DependentUpon>WorkerInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerProfile.Designer.cs">
+      <DependentUpon>WorkerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerHomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerHomeUserControl.Designer.cs">
+      <DependentUpon>WorkerHomeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerIssue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control Forms\WorkerIssue.Designer.cs">
+      <DependentUpon>WorkerIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\IssueOperations.cs" />
+    <Compile Include="Data Access\workerIssueDataAccess.cs" />
+    <EmbeddedResource Include="User Control Forms\AdminIssueUserControl.resx">
+      <DependentUpon>AdminIssueUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\AdminBillHistory.resx">
+      <DependentUpon>AdminBillHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\AdminSalesAndInventoryUserControl.resx">
+      <DependentUpon>AdminSalesAndInventoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\BillHistory.resx">
+      <DependentUpon>BillHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\MyIssue.resx">
+      <DependentUpon>MyIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\MedicineBill.resx">
+      <DependentUpon>MedicineBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\WorkerHome.resx">
+      <DependentUpon>WorkerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\AdminHomeUserControl.resx">
+      <DependentUpon>AdminHomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\AdminManageEmployees.resx">
+      <DependentUpon>AdminManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\WorkerInventory.resx">
+      <DependentUpon>WorkerInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\WorkerIssue.resx">
+      <DependentUpon>WorkerIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\WorkerProfile.resx">
+      <DependentUpon>WorkerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control Forms\WorkerHomeUserControl.resx">
+      <DependentUpon>WorkerHomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

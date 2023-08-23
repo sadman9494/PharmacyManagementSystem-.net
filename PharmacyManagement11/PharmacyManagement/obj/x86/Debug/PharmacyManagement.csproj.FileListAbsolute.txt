@@ -1,0 +1,13 @@
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\bin\x86\Debug\PharmacyManagement.exe
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\bin\x86\Debug\PharmacyManagement.exe.config
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.AdminHome.resources
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.Homepage.resources
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.Login.resources
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.Properties.Resources.resources
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.WorkerHome.resources
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.csproj.GenerateResource.cache
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.csproj.CoreCompileInputs.cache
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.exe
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.pdb
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\obj\x86\Debug\PharmacyManagement.csprojAssemblyReference.cache
+C:\Users\Zessi10\Desktop\Pharmacy Management System\PharmacyManagement\bin\x86\Debug\PharmacyManagement.pdb
